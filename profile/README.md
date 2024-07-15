@@ -3,11 +3,15 @@
 
 ## B1F4
 
-준우-메뉴<br>
-현아-가게<br>
-제호-주문<br>
-찬란-리뷰<br>
-진혁-유저 
+## Team
+
+|<img src="https://avatars.githubusercontent.com/u/122499274?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/164446778?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/127959482?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/101380919?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/83602306?v=4" width="150" height="150"/>|
+|:-:|:-:|:-:|:-:|:-:|
+|[@hyuna333](https://github.com/hyuna333)|박찬란<br/>[@colde99](https://github.com/colde99)|lemonticsoul<br/>[@lemonticsoul](https://github.com/lemonticsoul)|JinHyeok<br/>[@YangJinHyeok](https://github.com/YangJinHyeok)|Mo Joon Woo<br/>[@ijustwannabeme](https://github.com/ijustwannabeme)|
+|가게|리뷰|주문|유저|메뉴|
+
+<br>
+
 
 ## 설계 계획
 
