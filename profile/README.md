@@ -1,9 +1,21 @@
-## 신한투자증권 프로디지털 아카데미 미니미 프로젝트 
+ 
+## 🎀 개요
+![image](https://github.com/user-attachments/assets/f6f64f40-94f3-4cf9-9f6b-88f21a5b6622)
+
+### MVC 패턴을 활용한 배달 음식 주문 서비스 구현
+- 신한투자증권 프로디지털 아카데미 미니미 프로젝트 B1F4팀
 
 
-## B1F4
+### 주요 기능
+- **회원가입 및 로그인 기능:** 사용자는 서비스에 회원 가입하고, 로그인을 유지할 수 있습니다.
+- **카테고리 기능:** 원하는 배달 음식의 카테고리를 선택할 수 있습니다.
+- **식당 선택 기능:** 해당 카테고리에 등록된 식당을 보고, 선택할 수 있습니다.
+- **메뉴 주문 기능:** 해당 식당의 메뉴를 선택하여 주문할 수 있습니다.
+- **리뷰 작성 기능:** 주문이 완료된 후, 해당 주문에 대한 리뷰를 작성할 수 있습니다.
 
-## Team
+<br>
+
+## 👨‍👩‍👧‍👦 Team : B1F4
 
 |<img src="https://avatars.githubusercontent.com/u/122499274?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/164446778?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/127959482?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/101380919?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/83602306?v=4" width="150" height="150"/>|
 |:-:|:-:|:-:|:-:|:-:|
@@ -12,42 +24,61 @@
 
 <br>
 
+## 👑 프로젝트 목표
+- MVC 패턴을 학습하기 위해, spring을 차용하지 않고 MVC 규칙을 지키는 서비스를 java로 구현한다.
+- 배달의 민족 서비스를 가이드라인으로 배달 주문 서비스의 백엔드 틀을 구현한다.
+- 설계부터 구현까지 모든 과정을 경험하며, 백엔드 프로젝트 전 과정의 기초를 수행한다.
 
-## 설계 계획
+<br>
 
-설계 계획 
+## 🛠 설계 계획
 
 ![image](https://github.com/user-attachments/assets/155d4c4d-e839-490f-a14d-8b025dbce35b)
+### DDD 설계
+- 4일의 개발 주기를 고려하여, **설계보다 구현**에 집중하여 빠르게 개발에 착수하였다.
+- 통합적인 측면을 고려한 설계보다, **모듈 간 독립성**을 유지하자는 설계 목표에 따라 개발 시간을 단축할 수 있었다.
+- 패키지 선정과 기능 선정은 백엔드 리더(서제호)의 설계 하에 진행하였다.
 
-DDD설계를 중요시 했는데 왜 그랬냐? 다음과 같다.
+![image](https://github.com/user-attachments/assets/0b6f74b9-9274-4814-9646-9dc529fe240b)
+### 프로젝트 관리
+- 개발 주기를 고려하여 에자일 방식으로 프로젝트를 관리하고, 이틀간 스크럼 회의를 진행하였다.
+  
+<br>
 
-1.우린, 프론트엔드만 한 친구들이 많아 각자 독립성을 유지하면서 개발하고 싶었음.
-2.스프링을 배울 때 가장 큰 고통이 패키지 설정하고 이것이 어떤 기능을 하냐 라는게 중요했음.
-이런것이 중요해 키를 잡은 리더 서제호가  진행함.
 
-흐름을 보자면
 
-View에 요청이 들어온다 ->Controller에서 요청 및 데이터를 받는다.->service 단에서 요청 로직을 수행한다.->Repository에서 db처리 하는 것을 진행한다. 
-model은 db안의 엔터티를 생성한다. 
-
-이런식으로 설계 결정하였다. 
-
-## 플로우 차트
-
-![image](https://github.com/user-attachments/assets/ec0786c1-2ed6-4286-aef7-354b256dfc60)
-
-플로우 차트다 우린 배달의 민족의 흐름만 보았기 때문에 이렇게 설계 하였다.(뒤로가기 잡다한것은 뺐다. 왜? 우린 서비스를 만드는게 아니라 자바를 공부하는 목적에서다),
-
-메인에서 배달의 민족을 실행하면,
-먼저 로그인 창이 뜨고 회원이 맞으면
-카테고리 선택으로 들어가서 RestrautView를 호출 하고 그다음, 
-가게가 선택하면 그 가게에 menu가 호출되는 menuView를 호출하고 이것을 주문View인 OrderView로 흘러간다.
-
-결제는 결제로직을 굳이 할 필요는 없어서,
-바로 리뷰쓰는 페이지로 넘어갔다.
-
-## ERD
+## 📄 ERD
 
 ![image](https://github.com/user-attachments/assets/bd958011-0724-43e3-b27f-7108138fcd9d)
 
+<br>
 
+## 🎨 플로우 차트
+
+- **유저 플로우:** 로그인 -> 카테고리 선택 -> 레스토랑 선택 -> 메뉴 보기 -> 주문 -> 리뷰작성
+- **로직:** View 요청 -> Controller에서 요청 및 데이터 받음 -> service 단에서 요청 로직 수행 -> Repository에서 db처리
+- 수직적으로 진행되는 유저 플로우를 고려하여, 단계적 호출을 통한 1차적인 로직으로 설계를 진행하였다.
+
+(+) model은 db안의 엔터티를 생성한다. 
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ecdcae9a-de5f-4456-a2a3-5e7cebaabd69)
+
+<br>
+
+## 🎞️ 프로젝트 결과물
+- 메인뷰 실행 결과
+
+![GIFMaker_me (3)](https://github.com/user-attachments/assets/f6f698b2-b8e2-42cf-8399-874a19a66160)
+
+
+- 리뷰 실행 결과 (미통합 기능)
+
+![GIFMaker_me (2)](https://github.com/user-attachments/assets/26c1f284-515a-4026-bb2b-9c73428151b0)
+
+
+
+
+## 🪄 Tool
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> ![Github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white) ![Notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![Slack](https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
