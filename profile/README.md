@@ -46,6 +46,7 @@
 ### 3. 회의록 작성
 ![image](https://github.com/user-attachments/assets/66d7eadb-e9d9-4724-891e-5567270d4b2c)
 
+<br>
 
 ## 📄 ERD
 
@@ -77,7 +78,7 @@
 
 ![GIFMaker_me (2)](https://github.com/user-attachments/assets/26c1f284-515a-4026-bb2b-9c73428151b0)
 
-
+<br>
 
 ## 🪄 Tool
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> ![Github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white) ![Notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![Slack](https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
