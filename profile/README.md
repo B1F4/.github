@@ -42,3 +42,8 @@ model은 db안의 엔터티를 생성한다.
 결제는 결제로직을 굳이 할 필요는 없어서,
 바로 리뷰쓰는 페이지로 넘어갔다.
 
+## ERD
+
+![image](https://github.com/user-attachments/assets/bd958011-0724-43e3-b27f-7108138fcd9d)
+
+
